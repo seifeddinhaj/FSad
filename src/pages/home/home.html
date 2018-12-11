@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-content padding>
+      <ion-grid>
+          <ion-row>
+              <ion-col><b>ID</b></ion-col>
+              <ion-col><b>ImageUrl</b></ion-col>
+              <ion-col><b>price</b></ion-col>
+              <ion-col><b>description </b></ion-col>
+          </ion-row>
+          <ion-row text-wrap *ngFor="let ads of adsList">
+              <ion-col>{{ads.id}}</ion-col>
+              <ion-col>{{ads.image}}</ion-col>
+              <ion-col>{{ads.price}}</ion-col>
+              <ion-col>{{ads.description}} </ion-col>
+          </ion-row>
+      </ion-grid>
+  </ion-content>
+</ion-content>
