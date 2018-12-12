@@ -1,24 +1,29 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <button ion-button icon-only menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+  <ion-title>
+    Page Title
+  </ion-title>
+
+  <ion-buttons end>
+    <button ion-button icon-only (click)="openModal()">
+      <ion-icon name="options"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-content padding>
-      <ion-grid>
-          <ion-row>
-              <ion-col><b>ID</b></ion-col>
-              <ion-col><b>ImageUrl</b></ion-col>
-              <ion-col><b>price</b></ion-col>
-              <ion-col><b>description </b></ion-col>
-          </ion-row>
-          <ion-row text-wrap *ngFor="let ads of adsList">
-              <ion-col>{{ads.id}}</ion-col>
-              <ion-col>{{ads.image}}</ion-col>
-              <ion-col>{{ads.price}}</ion-col>
-              <ion-col>{{ads.description}} </ion-col>
-          </ion-row>
-      </ion-grid>
-  </ion-content>
+<ion-content padding class="card-background-page">
+
+  <ion-row text-wrap *ngFor="let ads of adsliste">
+      <ion-card>
+          <img src="{{ads.image}}"/>
+          <div class="card-title">{{ads.price}}</div>
+          <div class="card-subtitle">{{ads.description}}</div>
+        </ion-card>
+</ion-row>
+
 </ion-content>

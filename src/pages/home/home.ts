@@ -11,7 +11,7 @@ adsliste:any;
     this.ads.allAds().subscribe((adsTabel:any)=>
             {
 
-                this.adsList = adsTabel;
+                this.adsliste = adsTabel;
 
         });
   }
