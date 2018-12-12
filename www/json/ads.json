@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "image":"../assets/imgs/img1.jpeg",
+        "price":"20 Dt",
+        "description":"description 1 "
+    },
+    {
+        "id":2,
+        "image":"../assets/imgs/img2.jpeg",
+        "price":"150 Dt",
+        "description":"description 2 "
+    },
+    {
+            "id":1,
+            "image":"../assets/imgs/img3.jpeg",
+            "price":"0 Dt",
+            "description":"description 3 "
+        }
+
+]
